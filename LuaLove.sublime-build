@@ -12,7 +12,7 @@
 			"cmd": ["love", "$project_path"],
 			"osx":
 			{
-				"cmd": ["love $project_path"]
+				"cmd": ["love ${project_path:${folder:${file_path}}}"]
 			}
 		},
 		{   "name": "ldoc: File",
